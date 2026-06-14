@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body:has(.menu:target) {
+  overflow: hidden;
+}
+
 .page {
   &__body {
     margin: 0;
