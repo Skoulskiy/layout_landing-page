@@ -168,13 +168,16 @@
       <section id="contacts" class="section contacts">
         <div class="container contacts__container">
           <h2 class="section__title contacts__title">Contact us</h2>
-          <form action="#" class="contacts__form">
+          <form onsubmit="this.reset(); return false;" class="contacts__form">
             <input type="text" placeholder="Name"
-                    class="contacts__input input" name="Name">
+                    class="contacts__input input" name="Name"
+                    required>
             <input type="email" placeholder="Email"
-                    class="contacts__input input" name="email">
+                    class="contacts__input input" name="email"
+                    required>
             <textarea placeholder="Message" class="contacts__textarea input"
-                      name="message"></textarea>
+                      name="message"
+                      required></textarea>
             <button class="button contacts__button" type="submit">Send</button>
           </form>
           <div class="contacts__info">
